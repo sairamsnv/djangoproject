@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body background="https://images7.alphacoders.com/317/thumb-1920-317196.jpg">
+
+        <ul>
+        <li>FULLNAME:  {{us.fullname}}</li><br>
+        <li>UNICID:    {{us.userid}}</li><br>
+        <li>EMAIL:     {{us.email}}</li><br>
+       <li> MEMBERSHIP:{{us.membership}}</li><br>
+        <li>MOBILE:    {{us.mobile}}</li><br>
+        </ul>
+        <h2>ONLINE BUS BOKING<h2>
+    <form action="/lion/" method="POST">
+        {%csrf_token%}
+        source:<input type="text" name="su"><br>
+        destination:<input type="text" name="ds"><br>
+        departure:<input type="text" name="dep"><br>
+        membership: <select name="memb">
+            <option value="Elite">Elite</option>
+            <option value="Premium">Premium</option>
+            <option value="Normal">Normal</option>
+            </select><br>
+        <input type="submit" value="serchbus">
+        </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body background=https://www.starpik.com/wp-content/uploads/2019/08/School-bus-at-the-school-entrance-Vector-flat-style.-Autumn-fall-background-176626.jpg>
+    REGISTRATION FORM:<br>
+    <form action="/insert/" method="POST">
+        {%csrf_token%}
+    fullname: <input type="text" name="un"><br>
+    password: <input type="password" name="pw"><br>
+    email: <input type="text" name="email"><br>
+    membership: <select name="mem">
+        <option value="Elite">Elite</option>
+        <option value="Premium">Premium</option>
+        <option value="Normal">Normal</option>
+        </select><br>
+    mobile: <input type="text" name="mobile"><br>
+    <input type="submit" value="register">
+    </form>
+</body>
+</html>
